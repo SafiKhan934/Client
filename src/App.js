@@ -1,83 +1,26 @@
-import "./App.css"
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
-import AdminDashboard from "./Components/Admin/AdminDashboard"
-import AddWatch from "./Components/Admin/AddWatch"
-import EditWatch from "./Components/Admin/EditWatch"
-import Profile from "./Components/Admin/Profile"
-import AuthPage from "./Components/Admin/AuthPage"
-import AdminNavbar from "./Components/Admin/AdminNavbar"
-import ProtectedRoute from "./Components/Admin/ProtectedRoute"
-import { useState } from "react"
+import React from "react"
+import Navbar from "./Components/Navbar/Navbar"
+import Home from "./Components/Home/Home"
+import About from "./Components/About/About"
+import Contact from "./Components/Contact/Contact"
+import SingleWatch from "./Components/SingleWatch/SingleWatch"
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"
 
 function App() {
-  const [token, setToken] = useState(localStorage.getItem("adminToken") || null)
-
-  const handleLogin = (newToken) => {
-    localStorage.setItem("adminToken", newToken)
-    setToken(newToken)
-  }
-
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
-        {token && <AdminNavbar setToken={setToken} />}
-
+        <Navbar />
         <Routes>
-          <Route
-            path="/"
-            element={
-              token ? (
-                <Navigate to="/admin/dashboard" replace />
-              ) : (
-                <AuthPage onLogin={handleLogin} />
-              )
-            }
-          />
-          <Route
-            path="/admin/dashboard"
-            element={
-              <ProtectedRoute>
-                <AdminDashboard />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/admin/add-watch"
-            element={
-              <ProtectedRoute>
-                <AddWatch />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/admin/edit-watch/:id"
-            element={
-              <ProtectedRoute>
-                <EditWatch />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/admin/profile"
-            element={
-              <ProtectedRoute>
-                <Profile />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/admin/login"
-            element={
-              token ? (
-                <Navigate to="/admin/dashboard" replace />
-              ) : (
-                <AuthPage onLogin={handleLogin} />
-              )
-            }
-          />
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/watch/:id" element={<SingleWatch />} />
         </Routes>
       </BrowserRouter>
     </div>
   )
 }
+
 export default App
