@@ -1,0 +1,131 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #1f1f1f;
+  padding: 30px 20px;
+  font-family: serif;
+}
+
+.form {
+  background: #313131;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  text-align: center;
+  color: #f1dba6;
+  margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #1f1f1f;
+  color: white;
+  font-size: 14px;
+}
+
+.form textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.fileButtons {
+  margin: 15px 0;
+}
+
+.fileLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #f1dba6;
+  cursor: pointer;
+}
+
+.fileInput {
+  margin-top: 5px;
+  color: white;
+}
+
+.imageSection h4 {
+  color: #f1dba6;
+  margin-bottom: 10px;
+}
+
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.imgWrapper {
+  position: relative;
+}
+
+.previewImg {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+}
+
+.submitBtn {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submitBtn:hover {
+  background: #000;
+  color: #f1dba6;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form {
+    padding: 20px;
+  }
+  .form input,
+  .form textarea {
+    font-size: 13px;
+  }
+  .submitBtn {
+    font-size: 14px;
+  }
+  .previewImg {
+    width: 50px;
+    height: 50px;
+  }
+}

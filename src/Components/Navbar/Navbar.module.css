@@ -1,0 +1,32 @@
+.navbar {
+  font-family: serif !important;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 14px 20px;
+  border-bottom: 1px solid black;
+  opacity: 0.9;
+}
+
+.logo {
+  color: #f1dba6;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-links a {
+  letter-spacing: 2px !important;
+  word-spacing: 5px !important;
+  color: #f1dba6 !important;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+.whatsappBtn {
+  display: inline-block;
+  margin: 0;
+  outline: none !important;
+  border: none !important;
+  padding: 10px 20px;
+  background-color: #48bd73;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.whatsappBtn:hover {
+  background-color: #45cc76;
+  color: #f1dba6;
+}
