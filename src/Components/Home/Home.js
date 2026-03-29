@@ -54,8 +54,8 @@ function Home() {
               <p className={styles.brand}>{watch.brand}</p>
 
               <div className={styles.price}>
-                <span className={styles.original}>${watch.price.original}</span>
-                <span className={styles.discount}>${watch.price.discount}</span>
+                <span className={styles.original}>PKR{watch.price.original}</span>
+                <span className={styles.discount}>PKR{watch.price.discount}</span>
               </div>
 
               <p className={styles.description}>{watch.description}</p>
