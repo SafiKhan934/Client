@@ -67,11 +67,45 @@ function Contact() {
         <button type="submit">Send Message</button>
       </form>
       <div className={styles.social}>
-        <i className="fa-brands fa-whatsapp"></i>
-        <i className="fa-brands fa-facebook"></i>
-        <i className="fa-brands fa-instagram"></i>
-        <i className="fa-brands fa-facebook-messenger"></i>
-        <i className="fa-brands fa-tiktok"></i>
+        <a
+          href="https://wa.me/+923707189797"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/share/174jVvrCGE/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-facebook"></i>
+        </a>
+
+        <a
+          href="https://instagram.com/scarface_90990"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://m.me/61578951912347"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-facebook-messenger"></i>
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@growwaymarket"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-tiktok"></i>
+        </a>
       </div>
     </div>
   )
