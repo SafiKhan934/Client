@@ -24,6 +24,15 @@ function Home() {
       })
   }, [])
 
+const trimDescription=(text, wordLimit = 10)=>{
+  const words = text.split(" ");
+
+  if (words.length <= wordLimit) {
+    return text;
+  }
+
+  return words.slice(0, wordLimit).join(" ") + "...";
+}
   if (loading) {
     return (
       <div className={styles.loading}>
@@ -58,7 +67,7 @@ function Home() {
                 <span className={styles.discount}>PKR{watch.price.discount}</span>
               </div>
 
-              <p className={styles.description}>{watch.description}</p>
+              <p className={styles.description}>{trimDescription(text, wordLimit = 10)}</p>
 
               <button className={styles.btn}>View Details</button>
             </div>
