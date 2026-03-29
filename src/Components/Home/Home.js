@@ -30,7 +30,6 @@ const trimDescription=(text, wordLimit = 10)=>{
   if (words.length <= wordLimit) {
     return text;
   }
-
   return words.slice(0, wordLimit).join(" ") + "...";
 }
   if (loading) {
