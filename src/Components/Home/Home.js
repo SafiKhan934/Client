@@ -24,7 +24,7 @@ function Home() {
       })
   }, [])
 
-const trimDescription=(text, wordLimit = 10)=>{
+const trimDescription=(text, wordLimit)=>{
   const words = text.split(" ");
 
   if (words.length <= wordLimit) {
@@ -66,7 +66,7 @@ const trimDescription=(text, wordLimit = 10)=>{
                 <span className={styles.discount}>PKR{watch.price.discount}</span>
               </div>
 
-              <p className={styles.description}>{trimDescription(watch.description, wordLimit = 10)}</p>
+              <p className={styles.description}>{trimDescription(watch.description,10)}</p>
 
               <button className={styles.btn}>View Details</button>
             </div>
