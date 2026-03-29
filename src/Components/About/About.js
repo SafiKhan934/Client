@@ -45,7 +45,7 @@ function About() {
       <p>
         Contact us on{" "}
         <a
-          href="https://wa.me/923XXXXXXXXX"
+          href="https://wa.me/+923707189797"
           target="_blank"
           rel="noopener noreferrer"
         >
