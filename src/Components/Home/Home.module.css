@@ -36,7 +36,7 @@
   border-radius: 5px 5px 0 0;
   opacity: 0.9;
 }
-.watch-image:hover{
+.watch-image:hover {
   opacity: 1;
 }
 
@@ -107,7 +107,6 @@
   .watch-grid {
     gap: 20px;
   }
-
   .watch-image {
     height: 180px;
   }
@@ -132,7 +131,7 @@
   }
 
   .price {
-    flex-direction:row;
+    flex-direction: row;
     gap: 15px !important;
     font-size: 14px;
   }
@@ -140,7 +139,9 @@
   .description {
     font-size: 12px;
   }
-
+  .watch-info h3 {
+    font-size: 16px !important;
+  }
   .btn {
     padding: 6px 10px;
     font-size: 14px;

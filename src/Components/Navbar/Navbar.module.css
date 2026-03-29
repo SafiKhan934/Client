@@ -30,3 +30,35 @@
 .nav-links a:hover {
   text-decoration: underline;
 }
+
+/* 🔽 Responsive for tablets */
+@media (max-width: 768px) {
+  .nav-links a {
+    font-size: 16px;
+    margin-left: 15px;
+    letter-spacing: 1px !important;
+    word-spacing: 3px !important;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}
+
+/* 🔽 Responsive for mobile */
+@media (max-width: 480px) {
+  .nav-links a {
+    font-size: 14px;
+    margin-left: 10px;
+    letter-spacing: 1px !important;
+    word-spacing: 2px !important;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .navbar {
+    padding: 10px 12px;
+  }
+}
