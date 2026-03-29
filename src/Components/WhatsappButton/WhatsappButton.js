@@ -1,6 +1,6 @@
 import styles from "./WhatsappButton.module.css"
 function WhatsappButton({ watch }) {
-  const phoneNumber = "923168164164"
+  const phoneNumber = "+923707189797"
   const handleWhatsAppClick = () => {
     const message = `Hello! I'm interested in this watch:\nName: ${watch.name}\nPrice: ${watch.price?.original}\nCheck image: ${watch.image?.url}`
     const encodedMessage = encodeURIComponent(message)
