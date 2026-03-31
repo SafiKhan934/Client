@@ -6,8 +6,8 @@ function Navbar() {
   return (
     <div>
       <div className={styles.navbar}>
-        <div className={styles.logo} onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
-          ChronoLux
+        <div className={styles.logo} style={{ cursor: "pointer" }}>
+          <Link to="/"> ChronoLux </Link>
         </div>
         <div className={styles["nav-links"]}>
           <Link to="/contact">Contact</Link>
